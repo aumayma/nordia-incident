@@ -21,7 +21,8 @@
 ### F1. C1 was logged in from a new address at 11 Mar 03:27:23 (established)
 
 ```
-grep -n "karim.haddad@webmail.example" auth.csv access.log```
+grep -n "karim.haddad@webmail.example" auth.csv access.log
+```
 
 Result: `auth.csv:1029` `login_success` from `203.0.113.142` (Linux, Chrome 122), first try. C1's other logins (10 Mar 09:12 and 12:08, 12 Mar 16:20) come from `198.51.100.212` (iPhone, Safari). No `login_failure` for C1.
 
