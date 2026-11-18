@@ -1,7 +1,5 @@
 # Evidence README: Nordia incident, 10-12 March 2026
 
-Every figure in the report can be redone with the commands below. Run them from the folder `cyber/`, on a **copy** of the files. Nothing is installed: bash, awk and python3 are enough. No address or domain found in the logs is contacted or resolved.
-
 ## Conventions
 
 - C1 = the customer who wrote to support (named in `environment.md`). C2 = the account that logged in successfully from `198.51.100.77` (command in F4). Customer addresses are not repeated here.
@@ -23,8 +21,7 @@ Every figure in the report can be redone with the commands below. Run them from 
 ### F1. C1 was logged in from a new address at 11 Mar 03:27:23 (established)
 
 ```
-grep -n "<C1 address from environment.md>" auth.csv access.log
-```
+grep -n "karim.haddad@webmail.example" auth.csv access.log```
 
 Result: `auth.csv:1029` `login_success` from `203.0.113.142` (Linux, Chrome 122), first try. C1's other logins (10 Mar 09:12 and 12:08, 12 Mar 16:20) come from `198.51.100.212` (iPhone, Safari). No `login_failure` for C1.
 
